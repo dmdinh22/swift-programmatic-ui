@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let firstScreen = FirstScreenViewController()
         let navigationController = UINavigationController(rootViewController: firstScreen)
-
+        
+        // set window VC to nav controller
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
