@@ -39,6 +39,7 @@ class FirstScreenViewController: UIViewController {
         // push nextScreen onto the view to transition to nextScreen
         // pop screen off when going back
         navigationController?.pushViewController(nextScreen, animated: true)
+        nextScreen.title = "New Screen"
     }
     
     func setNextButtonConstraints() {
