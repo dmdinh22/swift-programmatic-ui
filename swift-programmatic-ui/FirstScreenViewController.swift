@@ -25,11 +25,20 @@ class FirstScreenViewController: UIViewController {
         nextButton.setTitleColor(.red, for: .normal)
         nextButton.setTitle("NEXT", for: .normal)
         
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        
         // add to VC's base view
         view.addSubview(nextButton)
         
         // have to set constraints after subview is added to the view
-        setNextButtonConstraints
+        setNextButtonConstraints()
+    }
+    
+    @objc func nextButtonTapped() {
+        let nextScreen = SeconScreenViewController()
+        // push nextScreen onto the view to transition to nextScreen
+        // pop screen off when going back
+        navigationController?.pushViewController(nextScreen, animated: true)
     }
     
     func setNextButtonConstraints() {
@@ -38,7 +47,7 @@ class FirstScreenViewController: UIViewController {
         // pin left side of btn to left side of view, constant = padding
         nextButton.leadingAnchor.constraint(lessThanOrEqualTo: view.leadingAnchor, constant: 20).isActive = true
         nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true // 50 pts height
         nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true // vertically centered
         
     }

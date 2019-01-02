@@ -11,6 +11,7 @@
 		5463F96321DB1226007DE90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463F96221DB1226007DE90F /* Assets.xcassets */; };
 		5463F96621DB1226007DE90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463F96421DB1226007DE90F /* LaunchScreen.storyboard */; };
 		5463F97021DB1358007DE90F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F96F21DB1358007DE90F /* FirstScreenViewController.swift */; };
+		5463F97221DC6A05007DE90F /* SeconScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463F97121DC6A05007DE90F /* SeconScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5463F96521DB1226007DE90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5463F96721DB1226007DE90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5463F96F21DB1358007DE90F /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		5463F97121DC6A05007DE90F /* SeconScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5463F96421DB1226007DE90F /* LaunchScreen.storyboard */,
 				5463F96721DB1226007DE90F /* Info.plist */,
 				5463F96F21DB1358007DE90F /* FirstScreenViewController.swift */,
+				5463F97121DC6A05007DE90F /* SeconScreenViewController.swift */,
 			);
 			path = "swift-programmatic-ui";
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			files = (
 				5463F95C21DB1225007DE90F /* AppDelegate.swift in Sources */,
 				5463F97021DB1358007DE90F /* FirstScreenViewController.swift in Sources */,
+				5463F97221DC6A05007DE90F /* SeconScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
